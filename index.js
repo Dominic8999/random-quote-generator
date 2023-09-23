@@ -98,8 +98,48 @@ let quotes = [
     {
         "text": "Don't count the days, make the days count.",
         "author": "Muhammad Ali"
+    },
+    {
+        "text": "The only thing we have to fear is fear itself.",
+        "author": "Franklin D. Roosevelt"
+    },
+    {
+        "text": "Success is walking from failure to failure with no loss of enthusiasm.",
+        "author": "Winston S. Churchill"
+    },
+    {
+        "text": "The only true wisdom is in knowing you know nothing.",
+        "author": "Socrates"
+    },
+    {
+        "text": "Life is either a great adventure or nothing.",
+        "author": "Helen Keller"
+    },
+    {
+        "text": "In the middle of every difficulty lies opportunity.",
+        "author": "Albert Einstein"
+    },
+    {
+        "text": "Your time is limited, don't waste it living someone else's life.",
+        "author": "Steve Jobs"
+    },
+    {
+        "text": "Success is not how high you have climbed, but how you make a positive difference to the world.",
+        "author": "Roy T. Bennett"
+    },
+    {
+        "text": "The only person you should try to be better than is the person you were yesterday.",
+        "author": "Unknown"
+    },
+    {
+        "text": "Life is 10% what happens to us and 90% how we react to it.",
+        "author": "Charles R. Swindoll"
+    },
+    {
+        "text": "The best time to plant a tree was 20 years ago. The second best time is now.",
+        "author": "Chinese"
     }
-];
+]
 
 
 function randomQuote() {

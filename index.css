@@ -48,7 +48,7 @@ div > button {
 
 @media (max-width: 900px) {
     div {
-        margin: 240px 25px 240px 25px;
+        margin: 160px 25px 160px 25px;
     }
     button[id='btn-el'] {
         min-width: 30%;

@@ -11,7 +11,7 @@ div {
     text-align: center;
     flex-direction: column;
     justify-content: center;
-    margin: 20em 25em 0 25em;
+    margin: 20em 25em 20em 25em;
 }
 
 button[id='btn-el'] {
@@ -48,7 +48,7 @@ div > button {
 
 @media (max-width: 900px) {
     div {
-        margin: 240px 25px 0 25px;
+        margin: 240px 25px 240px 25px;
     }
     button[id='btn-el'] {
         min-width: 30%;

@@ -1,14 +1,100 @@
-`[
-    {
-        "text": "The only way to do great work is to love what you do.",
-        "author": "Steve Jobs"
-    },
-    {
-        "text": "In three words I can sum up everything I've learned about life: it goes on.",
-        "author": "Robert Frost"
-    },
-    {
-        "text": "The best time to plant a tree was 20 years ago. The second best time is now.",
-        "author": "Chinese Proverb"
-    }
-]`
+{
+    "quotes": [
+        {
+            "text": "Life is what happens when you're busy making other plans.",
+            "author": "Alice Johnson"
+        },
+        {
+            "text": "The only way to do great work is to love what you do.",
+            "author": "John Smith"
+        },
+        {
+            "text": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+            "author": "Emily Davis"
+        },
+        {
+            "text": "In three words I can sum up everything I've learned about life: it goes on.",
+            "author": "Michael White"
+        },
+        {
+            "text": "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+            "author": "Sophia Brown"
+        },
+        {
+            "text": "Life is really simple, but we insist on making it complicated.",
+            "author": "David Lee"
+        },
+        {
+            "text": "The best way to predict the future is to create it.",
+            "author": "Olivia Wilson"
+        },
+        {
+            "text": "Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.",
+            "author": "Matthew Clark"
+        },
+        {
+            "text": "Believe you can and you're halfway there.",
+            "author": "Ella Turner"
+        },
+        {
+            "text": "Life is 10% what happens to us and 90% how we react to it.",
+            "author": "William Harris"
+        },
+        {
+            "text": "The only limit to our realization of tomorrow will be our doubts of today.",
+            "author": "Grace Robinson"
+        },
+        {
+            "text": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+            "author": "Daniel Evans"
+        },
+        {
+            "text": "If you want to lift yourself up, lift up someone else.",
+            "author": "Sophie Turner"
+        },
+        {
+            "text": "Life is either a daring adventure or nothing at all.",
+            "author": "Alexander Martin"
+        },
+        {
+            "text": "The way to get started is to quit talking and begin doing.",
+            "author": "Emma Baker"
+        },
+        {
+            "text": "Success is stumbling from failure to failure with no loss of enthusiasm.",
+            "author": "James Hall"
+        },
+        {
+            "text": "The biggest risk is not taking any risk. In a world that's changing quickly, the only strategy that is guaranteed to fail is not taking risks.",
+            "author": "Ava Walker"
+        },
+        {
+            "text": "In the end, we will remember not the words of our enemies, but the silence of our friends.",
+            "author": "Benjamin Cook"
+        },
+        {
+            "text": "Life's most persistent and urgent question is, 'What are you doing for others?'",
+            "author": "Lucy Turner"
+        },
+        {
+            "text": "To succeed in life, you need two things: ignorance and confidence.",
+            "author": "Jacob King"
+        },
+        {
+            "text": "Your time is limited, don't waste it living someone else's life.",
+            "author": "Zoe Adams"
+        },
+        {
+            "text": "The only person you are destined to become is the person you decide to be.",
+            "author": "Oliver Wright"
+        },
+        {
+            "text": "The best revenge is massive success.",
+            "author": "Charlotte Green"
+        },
+        {
+            "text": "Don't count the days, make the days count.",
+            "author": "Noah Parker"
+        }
+    ]
+}

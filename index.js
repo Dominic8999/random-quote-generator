@@ -1,6 +1,6 @@
-const quote = document.getElementById('quote')
-const author = document.getElementById('author')
-const btn = document.getElementById('btn-el')
+const quote = document.querySelector('#quote')
+const author = document.querySelector('p:nth-of-type(2)') // selects the second paragraph element
+const btn = document.querySelector('button')
 
 let quotes = [
     {

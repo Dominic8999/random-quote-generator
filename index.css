@@ -66,6 +66,18 @@ span:first-child, span:last-child {
     font-weight: 400;
 }
 
+a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    opacity: 0.1;
+}
+a:hover {
+    opacity: 1;
+}
+
 /* Styles for screen widths between 501px and 999px */
 @media (min-width: 300px) and (max-width: 999px) {
     div:not(.button_etc) {

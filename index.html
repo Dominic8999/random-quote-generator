@@ -29,6 +29,7 @@
         </div>
     </main>
     <footer>
+        <p><a href="https://github.com/Dominic8999/random-quote-generator" target="_blank">The github repository - Dominic8999</a></p>
         <script>
             document.addEventListener('keydown', function (event) {
                 if (event.key === "ArrowLeft") {
@@ -38,6 +39,7 @@
                     document.querySelector('#next').click();
                 }
                 else if (event.key === " ") {
+                    event.preventDefault()
                     document.querySelector('#btn-el').click();
                 }
             });

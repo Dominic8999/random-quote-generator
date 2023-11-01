@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="index.css">
     <script src="index.js" async></script>
 </head>
+
 <body>
     <header>
 
@@ -15,11 +17,32 @@
         <div>
             <p id="quote"></p>
             <p id="author"></p>
-            <button id="btn-el">Click me for the next quote!</button>  
+            <div class="button_etc">
+                <span id="prev">
+                    <b>&lt;</b>
+                </span>
+                <button id="btn-el">Click me for the next quote!</button>
+                <span id="next">
+                    <b>&gt;</b>
+                </span>
+            </div>
         </div>
     </main>
     <footer>
-
+        <script>
+            document.addEventListener('keydown', function (event) {
+                if (event.key === "ArrowLeft") {
+                    document.getElementById('prev').click();
+                }
+                else if (event.key === "ArrowRight") {
+                    document.querySelector('#next').click();
+                }
+                else if (event.key === " ") {
+                    document.querySelector('#btn-el').click();
+                }
+            });
+        </script>
     </footer>
 </body>
+
 </html>

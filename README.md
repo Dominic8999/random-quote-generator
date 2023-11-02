@@ -1,4 +1,4 @@
-# random-quote-generator
+# Random Quote Generator
 
 This a very simple quote *'generator'* which contains 50 quotes stored in JSON file 
 which from the other hand, is imported via fetch method in JavaScript.
@@ -19,6 +19,7 @@ a realease version 1.0
 ### Changed:
 - a new image
 
+#### preview (version 1.0):
 ![image](https://github.com/Dominic8999/random-quote-generator/assets/140336313/86e1382b-9160-4bde-a1d2-b5b9e82993f2)
 
 ## Update 1.01:
@@ -33,6 +34,6 @@ a realease version 1.0
 - btn is now only copies quotes, and doesn't generate another one.
 - btn has "save the quote!" text now
 
-#### Now (version 1.01):
+#### preview (Now, version 1.01):
 ![image](https://github.com/Dominic8999/random-quote-generator/assets/140336313/88d931a8-2854-48fb-8c35-e707acd0d94a)
 

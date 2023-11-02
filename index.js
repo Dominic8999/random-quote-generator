@@ -5,6 +5,7 @@ const prevButton = document.querySelector('#prev');
 const nextButton = document.querySelector('#next');
 
 let currentQuoteIndex = 0; // Initialize the index
+let generatedQuote = null; // Declare the generatedQuote variable outside the randomQuote function
 
 async function fetchQuotes() {
     try {
@@ -17,7 +18,7 @@ async function fetchQuotes() {
 }
 
 async function displayQuote(quotes, index) {
-    const generatedQuote = quotes[index];
+    generatedQuote = quotes[index]; // Assign the generated quote to the variable
     quote.textContent = generatedQuote.text;
     author.textContent = generatedQuote.author;
 }
@@ -30,7 +31,19 @@ async function randomQuote() {
 
 randomQuote();
 
-btn.addEventListener("click", randomQuote);
+btn.addEventListener("click", () => {
+    if (generatedQuote) {         // Copy quote to clipboard
+        const quoteText = `${generatedQuote.text} - ${generatedQuote.author}`;
+        navigator.clipboard.writeText(quoteText)
+            .then(function () {
+                console.log('Quote copied to clipboard: ' + quoteText);
+                alert('Success! Quote copied to clipboard: ' + quoteText);
+            })
+            .catch(function (err) {
+                console.error('Failed to copy quote: ', err);
+            });
+    }
+});
 
 prevButton.addEventListener("click", async () => {
     const quotes = await fetchQuotes();

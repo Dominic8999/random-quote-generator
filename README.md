@@ -8,4 +8,4 @@ This is a very simple 'quote generator' designed to provide users with inspirati
 - Click **Right Arrow** key to display the *next quote*
 
 ### Link to the current version online:
-[Click here](https://quote-generator-1234.netlify.app/) to visit a website.
+[Click here](https://quote-generator-1234.netlify.app/) to visit a website. (it might me outdated a bit)

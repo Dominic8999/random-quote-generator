@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Web site created using create-snowpack-app" />
-    <link rel="stylesheet" type="text/css" href="/index.css" />
-    <title>Snowpack App</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random quotes</title>
+    <link rel="shortcut icon" type="x-icon" href="pic3.jpg">
+    <link rel="stylesheet" type="text/css" href="index.css">
   </head>
-  <body>
-    <img id="img" src="/logo.svg" />
-    <canvas id="canvas"></canvas>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script type="module" src="/dist/index.js"></script>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  
+<body>
+  <script src="dist/index.js" type="module"></script>
+    <main>
+        <div>
+            <p id="quote"></p>
+            <p id="author"></p>
+            <div class="button_etc">
+                <span id="prev">
+                    <b>&lt;</b>
+                </span>
+                <button id="btn-el">save the quote!</button>
+                <span id="next">
+                    <b>&gt;</b>
+                </span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p><a href="https://github.com/Dominic8999/random-quote-generator" target="_blank">The github repository - Dominic8999</a></p>
+        <script>
+            document.addEventListener('keydown', function (event) {
+                if (event.key === "ArrowLeft") {
+                    document.getElementById('prev').click();
+                }
+                else if (event.key === "ArrowRight") {
+                    document.querySelector('#next').click();
+                }
+                else if (event.key === " ") {
+                    event.preventDefault()
+                    document.querySelector('#btn-el').click();
+                }
+            });
+        </script>
+    </footer>
+</body>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
 </html>

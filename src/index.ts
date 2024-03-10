@@ -1,11 +1,58 @@
-/**
- * This file is just a silly example to show everything working in the browser.
- * When you're ready to start on your site, clear the file. Happy hacking!
- **/
+const quote: any = document.querySelector('#quote');
+const author: any = document.querySelector('p:nth-of-type(2)'); // selects the second paragraph element
+const btn: any = document.querySelector('button');
+const prevButton: any = document.querySelector('#prev');
+const nextButton: any = document.querySelector('#next');
 
-import confetti from 'canvas-confetti';
+let currentQuoteIndex = 0; // Initialize the index
+let generatedQuote: any = null; // Declare the generatedQuote variable outside the randomQuote function
 
-confetti.create(document.getElementById('canvas') as HTMLCanvasElement, {
-  resize: true,
-  useWorker: true,
-})({ particleCount: 200, spread: 200 });
+async function fetchQuotes() {
+    try {
+        const response = await fetch('quotes.json');
+        const data = await response.json();
+        return data.quotes;
+    } catch (error) {
+        console.error('The quotes are unavailable due to an error:', error);
+    }
+}
+
+async function displayQuote(quotes: any, index: any) {
+    generatedQuote = quotes[index]; // Assign the generated quote to the variable
+    quote.textContent = generatedQuote.text;
+    author.textContent = generatedQuote.author;
+}
+
+async function randomQuote() {
+    const quotes = await fetchQuotes();
+    currentQuoteIndex = Math.floor(Math.random() * quotes.length);
+    displayQuote(quotes, currentQuoteIndex);
+}
+
+randomQuote();
+
+btn.addEventListener("click", () => {
+    if (generatedQuote) {         // Copy quote to clipboard
+        const quoteText = `${generatedQuote.text} - ${generatedQuote.author}`;
+        navigator.clipboard.writeText(quoteText)
+            .then(function () {
+                console.log('Quote copied to clipboard: ' + quoteText);
+                alert('Success! Quote copied to clipboard: ' + quoteText);
+            })
+            .catch(function (err) {
+                console.error('Failed to copy quote: ', err);
+            });
+    }
+});
+
+prevButton.addEventListener("click", async () => {
+    const quotes = await fetchQuotes();
+    currentQuoteIndex = (currentQuoteIndex - 1 + quotes.length) % quotes.length;
+    displayQuote(quotes, currentQuoteIndex);
+});
+
+nextButton.addEventListener("click", async () => {
+    const quotes = await fetchQuotes();
+    currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
+    displayQuote(quotes, currentQuoteIndex);
+});

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random quotes</title>
+    <link rel="shortcut icon" type="x-icon" href="pic3.jpg">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" async></script>
+</head>
+
+<body>
+    <main>
+        <div>
+            <p id="quote"></p>
+            <p id="author"></p>
+            <div class="button_etc">
+                <span id="prev">
+                    <b>&lt;</b>
+                </span>
+                <button id="btn-el">save the quote!</button>
+                <span id="next">
+                    <b>&gt;</b>
+                </span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p><a href="https://github.com/Dominic8999/random-quote-generator" target="_blank">The github repository - Dominic8999</a></p>
+        <script>
+            document.addEventListener('keydown', function (event) {
+                if (event.key === "ArrowLeft") {
+                    document.getElementById('prev').click();
+                }
+                else if (event.key === "ArrowRight") {
+                    document.querySelector('#next').click();
+                }
+                else if (event.key === " ") {
+                    event.preventDefault()
+                    document.querySelector('#btn-el').click();
+                }
+            });
+        </script>
+    </footer>
+</body>
+
+</html>

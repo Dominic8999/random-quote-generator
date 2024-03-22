@@ -3,6 +3,7 @@ const author: any = document.querySelector('p:nth-of-type(2)'); // selects the s
 const btn: any = document.querySelector('button');
 const prevButton: any = document.querySelector('#prev');
 const nextButton: any = document.querySelector('#next');
+const btnEl: any = document.querySelector('#bthn-el');
 
 let currentQuoteIndex = 0; // Initialize the index
 let generatedQuote: any = null; // Declare the generatedQuote variable outside the randomQuote function
@@ -55,4 +56,17 @@ nextButton.addEventListener("click", async () => {
     const quotes = await fetchQuotes();
     currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
     displayQuote(quotes, currentQuoteIndex);
+});
+
+document.addEventListener('keydown', function (event) {
+    if (event.key === "ArrowLeft") {
+        prevButton.click();
+    }
+    else if (event.key === "ArrowRight") {
+        nextButton.click();
+    }
+    else if (event.key === " ") {
+        event.preventDefault()
+        btnEl.click();
+    }
 });

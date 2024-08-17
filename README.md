@@ -18,3 +18,4 @@ This is a simple "Quote Generator" app that gives you inspiration and motivation
 - Size of the copy button in the middle on mobile devices.
 
 ### preview (Version 1.2):
+![image](https://github.com/user-attachments/assets/b29e631f-d5ca-4321-8fff-964e54b1dccc)

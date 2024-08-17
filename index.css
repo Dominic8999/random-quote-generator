@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Montserrat:ital,wght@0,500;0,600;0,700;1,600&display=swap');
-
+@import url(random-color.js);
 body {
-    background: url('pic3.jpg');
     color: azure;
 }
 
@@ -24,7 +23,7 @@ button[id='btn-el'] {
 
 div > button {
     border: none;
-    background-color: cadetblue;
+    background-color: rgb(14, 162, 195);
     color: rgb(3, 3, 3);
     padding: 25px 25px;
     border-radius: 10%;
@@ -46,7 +45,7 @@ span:last-child {
 }
 
 span:first-child, span:last-child {
-    background-color: cadetblue;
+    background-color: rgb(14, 162, 195);
     color: black;
     padding: 20px 20px;
     border: none;
@@ -93,7 +92,7 @@ a:hover {
 /* Styles for screen widths equal to or greater than 1000px */
 @media (min-width: 1000px) {
     div:not(.button_etc) {
-        margin: 375px 25px 25px 25px;
+        margin: 300px 200px 0px 200px;
     }
     button[id='btn-el'] {
         max-width: 40%;

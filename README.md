@@ -2,6 +2,9 @@
 
 This is a simple "Quote Generator" app that gives you inspiration and motivation. It now has 100 different quotes, all stored in a JSON file. The app uses JavaScript to load these quotes and display them randomly when you click a button. Every time you use the generator, the background color and the button color also change randomly, making it a fun and colorful experience. Whether you need wisdom or encouragement, just click the button to get a new quote and a fresh look.
 
+## Current online version:
+[Click here](https://quote-generator-1234.netlify.app/)
+
 ### Quick Manual:
 - Click **Left Arrow** key to display the *previous quote*
 - Click **Space** key to save the *quote*

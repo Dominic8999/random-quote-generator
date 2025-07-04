@@ -19,8 +19,8 @@ async function fetchQuotes() {
 
 async function displayQuote(quotes, index) {
     generatedQuote = quotes[index]; // Assign the generated quote to the variable
-    quote.textContent = generatedQuote.text;
-    author.textContent = generatedQuote.author;
+    quote.textContent = generatedQuote.quoteText;
+    author.textContent = generatedQuote.quoteAuthor;
 }
 
 async function randomQuote() {
@@ -33,7 +33,7 @@ randomQuote();
 
 btn.addEventListener("click", () => {
     if (generatedQuote) {         // Copy quote to clipboard
-        const quoteText = `${generatedQuote.text} - ${generatedQuote.author}`;
+        const quoteText = `${generatedQuote.quoteText} - ${generatedQuote.quoteAuthor}`;
         navigator.clipboard.writeText(quoteText)
             .then(function () {
                 console.log('Quote copied to clipboard: ' + quoteText);

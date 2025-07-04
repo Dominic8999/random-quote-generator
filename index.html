@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="quote_bubble.svg">
+    <link rel="icon" type="image/x-icon" href="media/quote_bubble.svg">
     <title>Random quotes</title>
     <link rel="stylesheet" href="index.css">
 </head>
@@ -14,21 +14,22 @@
             <p id="author"></p>
             <div class="button_etc">
                 <span id="prev">
-                    <b>&lt;</b>
+                    <b>&#8592;</b>
                 </span>
                 <button id="btn-el">save the quote!</button>
                 <span id="next">
-                    <b>&gt;</b>
+                    <b>&#8594;</b>
                 </span>
             </div>
             <div id="changeBackground">
                 <label for="btn-select">Choose your color:</label>
                 <select name="btn-select" id="btn-select">
-                    <option value="0" disabled style="color: white; background-color: rgb(30, 110, 121);">Choose your option:</option>
-                    <option value="default">random</option>
+                    <option value="0" disabled style="font-weight: 700; color: #000">Choose your option:</option>
+                    <option value="random">random</option>
+                    <option value="default">default</option>
+                    <option value="red">red</option>
                     <option value="green">green</option>
                     <option value="blue">blue</option>
-                    <option value="red">red</option>
                 </select>
                 <script src="backgroundColor.js" defer></script>
             </div>

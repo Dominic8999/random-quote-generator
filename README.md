@@ -114,9 +114,11 @@ random-quote-generator/
 
 ## 💡 Future Plans
 
-- ✅ Mobile responsiveness improvements
-- 🔖 Local storage for saved quotes
-- 🎨 Custom Themes:
+- ✅ improving styles and design in general
+- 🔧 Bug-fixes
+- 🎨 Custom Themes
+- 🔍 Retrieving quotes from certain authors
+- 🖍 Different types of quotes
 
 ---
 

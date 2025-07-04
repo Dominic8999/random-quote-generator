@@ -11,7 +11,7 @@ div {
     justify-content: center;
 }
 
-button[id='btn-el'], select {
+button[id='btn-el'] {
     min-width: 8%;
     max-width: 16%;
     margin: auto;
@@ -24,15 +24,49 @@ div > button {
     border: none;
     background-color: rgb(14, 162, 195);
     color: rgb(3, 3, 3);
-    padding: 25px 25px;
+    padding: 10px 20px;
     border-radius: 10%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:medium;
+    cursor: pointer;
+}
+
+#changeBackground {
+    margin: 0 auto;
+    margin-top: -50px;
+    padding: 2px;
+    max-width: 100%;
+    text-align: center;
+    color: black;
+}
+
+#changeBackground > label {
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+
+select{
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    padding: 25px;
+    max-width: 100%;
+    border: none;
+    border-radius: 30%;
+    text-align: center;
+}
+option {
+    border: none;
+    outline: none;
 }
 
 .button_etc {
+    margin: 0 auto;
+    max-width: 75%;
     display: flex;
     flex-direction: row;
+}
+span, select {
+    cursor: pointer;
 }
 
 span:first-child {
@@ -51,10 +85,6 @@ span:first-child, span:last-child {
     border-radius: 20%;
 }
 
-select{
-    margin: 0 auto;
-    max-width: 50%;
-}
 
 #quote {
     font-size: xx-large;
@@ -84,7 +114,7 @@ a:hover {
 /* Styles for screen widths between 501px and 999px */
 @media (min-width: 300px) and (max-width: 999px) {
     div:not(.button_etc) {
-        margin: 260px 25px 25px 25px;
+        margin: 260px 25px 0px 25px;
     }
     button[id='btn-el'] {
         max-width: 40%;

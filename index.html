@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="quote_bubble.svg">
     <title>Random quotes</title>
     <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
     <main>
         <div>
@@ -22,13 +21,16 @@
                     <b>&gt;</b>
                 </span>
             </div>
-            <div>
+            <div id="changeBackground">
+                <label for="btn-select">Choose your color:</label>
                 <select name="btn-select" id="btn-select">
-                    <option value="default">default</option>
+                    <option value="0" disabled style="color: white; background-color: rgb(30, 110, 121);">Choose your option:</option>
+                    <option value="default">random</option>
                     <option value="green">green</option>
                     <option value="blue">blue</option>
                     <option value="red">red</option>
                 </select>
+                <script src="backgroundColor.js" defer></script>
             </div>
         </div>
     </main>
@@ -36,8 +38,6 @@
         <p><a href="https://github.com/Dominic8999/random-quote-generator" target="_blank">The github repository - Dominic8999</a></p>
     </footer>
     <script src="keyFunctions.js"></script>
-    <script src="index.js" async></script>
-    <script src="random-color.js" defer></script>
+    <script src="quotes_functions.js" async></script>
 </body>
-
 </html>

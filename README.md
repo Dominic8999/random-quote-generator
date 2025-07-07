@@ -134,5 +134,8 @@ random-quote-generator/
 
 ## 🙌 Credits
 
-Developed by **Dominic8999**  
-Thanks to open-source inspiration and the developers who believe in simple, beautiful tools.
+Developed by [Dominic8999](https://github.com/Dominic8999)
+
+Quotes json made by [JamesFT](https://github.com/JamesFT) whose repository is [here](https://github.com/JamesFT/Database-Quotes-JSON.git)
+
+Thanks to all open-source inspiration and the developers who believe in simple, beautiful tools. You're great, guys! 😁
